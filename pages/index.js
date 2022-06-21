@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1>EXAMPLE TABLEAU</h1>
+        <h1 className={styles.title}>EXAMPLE TABLEAU</h1>
         <Tableau />
       </main>
 

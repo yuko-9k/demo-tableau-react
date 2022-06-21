@@ -5,14 +5,17 @@ let TableauReport;
 
 const Tableau = () => {
   const [screenWidth, setScreenWidth] = useState(0);
+  console.log(isTablet);
 
   const options = {
     padding: "0",
     margin: "0",
     width: `${screenWidth}px`,
     height: "2227px",
-    device: isMobile ? "phone" : isTablet ? "tablet" : "desktop",
+    device: isTablet ? "tablet" : "desktop",
   };
+
+  console.log(options);
 
   useEffect(() => {
     if (typeof window !== undefined) {
